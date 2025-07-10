@@ -6,6 +6,7 @@ type RoomParams = {
 
 export function Room() {
   const params = useParams<RoomParams>()
+  
   if (!params.roomId) { return <Navigate to="/" replace /> }
   return (
     <div className="flex h-screen w-screen items-center justify-center">

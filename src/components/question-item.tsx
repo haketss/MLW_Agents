@@ -19,7 +19,7 @@ export function QuestionItem({ question }: QuestionItemProps) {
     <Card>
       <CardContent>
         <div className="space-y-4">
-          {/* Question */}
+
           <div className="flex items-start space-x-3">
             <div className="flex-shrink-0">
               <div className="flex size-8 items-center justify-center rounded-full bg-primary/10">
@@ -34,7 +34,7 @@ export function QuestionItem({ question }: QuestionItemProps) {
             </div>
           </div>
 
-          {(!!question.answer || question.isGeneratingAnswer) && (
+          {(question.answer || question.isGeneratingAnswer) && (
             <div className="flex items-start space-x-3">
               <div className="flex-shrink-0">
                 <div className="flex size-8 items-center justify-center rounded-full bg-primary/10">

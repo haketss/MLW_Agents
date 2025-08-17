@@ -7,7 +7,7 @@ interface QuestionListProps {
 
 export function QuestionList(props: QuestionListProps) {
   const { data } = useRoomQuestions(props.roomId)
-
+   
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">

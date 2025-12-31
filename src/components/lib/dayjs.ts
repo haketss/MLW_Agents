@@ -1,5 +1,5 @@
 import Lib from "dayjs";
-import 'dayjs/locale/pt-BR'
+import 'dayjs/locale/pt-br';
 import relativeTime from 'dayjs/plugin/relativeTime'
 
 Lib.locale('pt-BR')
